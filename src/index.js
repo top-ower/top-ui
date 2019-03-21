@@ -1,15 +1,19 @@
-import HelloWorld from './packages/hello-world/index.js';
-import MoorButton from './packages/button/index.js';
-import MoorSelect from './packages/select/index.js';
-import MoorInput from './packages/input/index.js';
-import MoorSwitch from './packages/switch/index.js';
+import BarChart from './packages/barChart/index.js';
+import GaugeChart from './packages/gaugeChart/index.js';
+import LineBarChart from './packages/lineBarChart/index.js';
+import LineChart from './packages/lineChart/index.js';
+import PieChart from './packages/pieChart/index.js';
+import SvgIcon from './packages/svgIcon/index.js';
+import MapDistribution from './packages/mapDistribution/index.js';
 
 const components = [
-  HelloWorld,
-  MoorButton,
-  MoorSelect,
-  MoorInput,
-  MoorSwitch
+  BarChart,
+  GaugeChart,
+  LineBarChart,
+  LineChart,
+  PieChart,
+  SvgIcon,
+  MapDistribution,
 ]
 
 const install = function(Vue, opts = {}) {
@@ -25,9 +29,11 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  HelloWorld,
-  MoorButton,
-  MoorSelect,
-  MoorInput,
-  MoorSwitch
+  BarChart,
+  GaugeChart,
+  LineBarChart,
+  LineChart,
+  PieChart,
+  SvgIcon,
+  MapDistribution,
 }
